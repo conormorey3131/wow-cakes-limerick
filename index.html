@@ -18,16 +18,14 @@
     --ink:#3d2b3a; --ink-soft:#6f5a6a; --line:#ecd9e0; --card:#ffffff;
     --shadow:0 18px 40px rgba(74,44,90,.14); --radius:18px;
   }
-  @media (prefers-color-scheme: dark){
-    :root{ --cream:#241527; --ivory:#2d1b31; --card:#33203a; --pink-pale:#33203a; --pink-soft:#3d2745; --ink:#f6eaf1; --ink-soft:#d8bccf; --line:#4d3354; --shadow:0 18px 40px rgba(0,0,0,.45); }
-  }
+  
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;font-family:"Jost",system-ui,sans-serif;background:var(--cream);background-image:radial-gradient(color-mix(in srgb, var(--pink) 13%, transparent) 1px, transparent 1.3px);background-size:24px 24px;color:var(--ink);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
   img{max-width:100%;display:block}
   a{color:var(--purple)}
   h1,h2,h3{font-family:"Playfair Display",Georgia,serif;color:var(--purple);line-height:1.15;margin:0}
-  @media (prefers-color-scheme: dark){ h1,h2,h3{color:#f3d9e7} }
+  
   .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
   .script{font-family:"Pinyon Script",cursive;font-weight:400}
 
@@ -37,23 +35,23 @@
   .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
   .brand-mark{width:44px;height:44px;border-radius:50%;flex:none;background:var(--purple);color:#f8e1e8;display:grid;place-items:center;font-family:"Pinyon Script",cursive;font-size:26px;line-height:1;padding-top:4px;border:2px solid var(--gold)}
   .brand-name{font-family:"Playfair Display",serif;font-size:24px;font-weight:700;color:var(--purple);line-height:1}
-  @media (prefers-color-scheme: dark){ .brand-name{color:#f3d9e7} }
+  
   .brand-sub{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-top:3px}
   .nav-links{display:flex;gap:22px;align-items:center}
   .nav-links a{text-decoration:none;color:var(--ink);font-size:15px;font-weight:500;letter-spacing:.02em;padding:6px 2px}
   .nav-links a:hover{color:var(--purple-soft)}
   .nav-links a.active{color:var(--purple);border-bottom:2px solid var(--gold);font-weight:600}
-  @media (prefers-color-scheme: dark){ .nav-links a.active{color:#f3d9e7} }
+  
   .btn{display:inline-block;text-decoration:none;font-weight:600;letter-spacing:.02em;padding:12px 26px;border-radius:999px;font-size:16px;border:1px solid transparent;cursor:pointer;font-family:inherit}
   .btn:hover{text-decoration:underline;text-underline-offset:3px}
   .btn-gold{background:var(--gold);color:#2e2003}
   .btn-purple{background:var(--purple);color:#fdf3f5}
   .btn-outline{border-color:var(--pink);color:var(--purple);background:transparent}
-  @media (prefers-color-scheme: dark){ .btn-outline{color:#f3d9e7} }
+  
   .btn-small{padding:9px 20px !important;font-size:15px}
   .nav-toggle{display:none;width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:var(--card);cursor:pointer;place-items:center;flex-direction:column;gap:5px;align-items:center;justify-content:center}
   .nav-toggle span{display:block;width:20px;height:2px;background:var(--purple);border-radius:2px}
-  @media (prefers-color-scheme: dark){ .nav-toggle span{background:#f3d9e7} }
+  
   @media (max-width:860px){
     .nav-toggle{display:flex}
     .nav-links{position:absolute;top:calc(100% + 1px);left:-22px;right:-22px;background:var(--cream);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:14px 22px 18px;gap:2px;display:none;box-shadow:0 18px 30px rgba(0,0,0,.08)}
@@ -91,14 +89,14 @@
   section{padding:76px 0}
   .section-head{max-width:640px;margin:0 0 40px}
   .section-head .script{font-size:34px;color:var(--pink);line-height:1.1;display:block;transform:rotate(-1.2deg);transform-origin:left center}
-  @media (prefers-color-scheme: dark){ .section-head .script{color:var(--gold-soft)} }
+  
   .section-head h2{font-size:clamp(30px,4.5vw,42px);font-weight:600;margin-top:2px}
   .section-head p{color:var(--ink-soft);margin:14px 0 0}
   .flourish{display:none}
   .flourish::before,.flourish::after{content:"";height:1px;width:56px;background:var(--gold)}
   .flourish span{color:var(--gold);font-size:15px}
   .band-pink{background:var(--pink-pale)} .band-soft{background:var(--pink-soft)}
-  @media (prefers-color-scheme: dark){ .band-soft{background:#2a1830} }
+  
 
   .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
   .about-photo{border-radius:10px;overflow:hidden;box-shadow:-14px 14px 0 var(--pink-soft);aspect-ratio:4/3.4}
@@ -141,15 +139,15 @@
   .flavour h3{font-size:21px;margin-bottom:5px}
   .flavour p{margin:0;color:var(--ink-soft);font-size:15.5px;max-width:34em}
   .flavour .tag{display:block;margin-top:7px;font-family:"Pinyon Script",cursive;font-size:21px;line-height:1;color:var(--purple-soft)}
-  @media (prefers-color-scheme: dark){ .flavour .tag{color:var(--gold-soft)} }
+  
   @media (max-width:640px){ .flavours{grid-template-columns:1fr} }
   .flavour-note{color:var(--ink-soft);max-width:620px;margin:28px 0 0;font-size:16px}
   .flavour-note em{color:var(--purple)}
-  @media (prefers-color-scheme: dark){ .flavour-note em{color:var(--gold-soft)} }
+  
 
   .occasions{display:flex;flex-wrap:wrap;gap:10px 26px;max-width:900px}
   .occasion{padding:4px 2px;font-family:"Playfair Display",serif;font-size:20px;color:var(--purple);display:flex;align-items:center;gap:10px}
-  @media (prefers-color-scheme: dark){ .occasion{color:#f3d9e7} }
+  
   .occasion i{width:7px;height:7px;border-radius:50%;background:var(--gold);flex:none}
   .occasion.featured{border-bottom:2px solid var(--gold);font-weight:700}
   .occasion.featured i{background:var(--pink)}
@@ -166,13 +164,13 @@
   .size-row .dims span{color:var(--ink-soft);font-weight:400;font-size:14.5px}
   .size-row .serves{text-align:right;white-space:nowrap}
   .size-row .serves b{font-family:"Playfair Display",serif;font-size:21px;color:var(--purple)}
-  @media (prefers-color-scheme: dark){ .size-row .serves b{color:#f3d9e7} }
+  
   .size-row .serves small{display:block;font-size:12.5px;color:var(--ink-soft);letter-spacing:.06em;text-transform:uppercase}
   .tier-visual{display:flex;align-items:flex-end;gap:5px;margin-bottom:16px;height:44px}
   .tier-visual i{display:block;background:var(--pink-soft);border:1.5px solid var(--pink);border-radius:5px 5px 3px 3px;margin:0 auto}
   @media (max-width:900px){ .sizes-grid{grid-template-columns:1fr} }
   .sizes-note{margin-top:22px;background:var(--pink-soft);border-radius:var(--radius);padding:22px 26px;display:grid;grid-template-columns:1fr 1fr;gap:8px 34px;font-size:15.5px}
-  @media (prefers-color-scheme: dark){ .sizes-note{background:#33203a} }
+  
   .sizes-note p{margin:6px 0;color:var(--ink-soft)}
   .sizes-note strong{color:var(--ink)}
   @media (max-width:700px){ .sizes-note{grid-template-columns:1fr} }
@@ -187,12 +185,12 @@
   .gallery-cta a{font-weight:600}
   #page-gallery section{background:var(--pink-soft)}
   #page-gallery .page-head{background:var(--pink-soft)}
-  @media (prefers-color-scheme: light){
+  
     #page-gallery .page-head{color:var(--purple-deep)}
     #page-gallery .page-head h1{color:var(--purple-deep)}
     #page-gallery .page-head p{color:var(--purple)}
     #page-gallery .page-head .script{color:var(--purple)}
-  }
+  
 
   .lightbox{position:fixed;inset:0;z-index:100;background:rgba(38,20,46,.94);display:none;align-items:center;justify-content:center;padding:20px}
   .lightbox.open{display:flex}
@@ -205,7 +203,7 @@
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .step{text-align:center;padding:10px 18px}
   .step-num{width:58px;height:58px;margin:0 auto 14px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font-family:"Playfair Display",serif;font-size:24px;color:var(--purple);background:var(--card)}
-  @media (prefers-color-scheme: dark){ .step-num{color:#f3d9e7} }
+  
   .step h3{font-size:21px;margin-bottom:6px}
   .step p{color:var(--ink-soft);margin:0;font-size:15.5px}
   @media (max-width:820px){ .steps{grid-template-columns:1fr} }
@@ -230,7 +228,7 @@
   form.enquiry p{color:var(--ink-soft);font-size:15px;margin:0 0 18px}
   .field{margin-bottom:14px}
   .field label{display:block;font-size:13.5px;font-weight:600;letter-spacing:.04em;margin-bottom:6px;color:var(--purple)}
-  @media (prefers-color-scheme: dark){ .field label{color:var(--gold-soft)} }
+  
   .field input,.field select,.field textarea{width:100%;font:inherit;font-size:16px;padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
   .field textarea{resize:vertical;min-height:96px}
   .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -253,7 +251,7 @@
 
   footer{padding:38px 0 44px;text-align:center;color:var(--ink-soft);font-size:14.5px}
   footer .script{font-size:34px;color:var(--purple);display:block;line-height:1.2}
-  @media (prefers-color-scheme: dark){ footer .script{color:#f3d9e7} }
+  
   footer nav{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin:10px 0 14px}
   footer nav a{text-decoration:none;color:var(--ink-soft)}
   footer nav a:hover{color:var(--purple-soft)}
@@ -261,7 +259,7 @@
   .site-credit{margin-top:12px;font-size:13px;color:var(--ink-soft)}
   .site-credit a{color:var(--purple-soft);text-decoration:none;border-bottom:1px dotted var(--gold)}
   .site-credit a:hover{color:var(--purple)}
-  @media (prefers-color-scheme: dark){ .site-credit a{color:var(--gold-soft)} .site-credit a:hover{color:#f3d9e7} }
+  
 
   /* Light pink band backgrounds (client colour, replacing dark purple) — kept last so they win over the base band rules */
   .hero,.page-head,.cta-band,.contact-band{background:#b59ca2;color:var(--purple-deep)}
@@ -283,17 +281,19 @@
   .contact-card{background:var(--card);border-color:var(--line);color:var(--ink)}
   .contact-card:hover{background:var(--pink-soft)}
   .contact-card small{color:var(--purple-soft)}
-  @media (prefers-color-scheme: dark){ .contact-card small{color:var(--gold-soft)} }
+  
   .contact-blurb{color:var(--purple-deep)}
-  @media (prefers-color-scheme: light){
+  
     .section-head .script,.about-copy .script{color:#b34a6e}
     .size-card h3 small{color:#7d621b}
     .size-row .serves small{color:var(--ink)}
-  }
+  
 
   /* Home page bands in the paler pink (client request) — fixed hex so it stays pale in dark mode too */
   #page-home .hero,#page-home .cta-band{background:#fdf3f5}
   #page-home .highlight-card:nth-child(2){background:#fdf3f5;border-color:#ecd9e0}
+
+  :root{color-scheme:light}
 </style>
 </head>
 <body>
